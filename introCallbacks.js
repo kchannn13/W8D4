@@ -4,7 +4,7 @@ class Clock {
         this.hours = currentTime.getHours();
         this.minutes = currentTime.getMinutes();
         this.seconds = currentTime.getSeconds();
-
+        
     };
 
     printTime() {
