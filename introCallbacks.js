@@ -4,7 +4,7 @@ class Clock {
         this.hours = currentTime.getHours();
         this.minutes = currentTime.getMinutes();
         this.seconds = currentTime.getSeconds();
-        
+
     };
 
     printTime() {
@@ -12,3 +12,5 @@ class Clock {
         console.log(time);
     }
 }
+
+const clock = new Clock();
