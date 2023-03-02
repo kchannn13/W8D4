@@ -10,7 +10,10 @@ class Clock {
         // const unboundTick = this._tick;
         // const boundTick = unboundTick.bind(this);
         // setInterval(boundTick, 1000);
-        setInterval(this._tick.bind(this), 1000);
+        // setInterval(this._tick.bind(this), 1000);
+        setInterval(() => {
+            this._tick();
+        }, 1000);
     };
 
     printTime() {
@@ -19,7 +22,7 @@ class Clock {
     };
 
     _tick() {
-        debugger;
+        // debugger;
         this.seconds ++
         if (this.seconds === 60) {
             this.seconds = 0;
